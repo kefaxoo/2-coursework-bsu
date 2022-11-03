@@ -1,0 +1,15 @@
+body {
+    font-family: "SF Pro Rounded";
+    text-align: center;
+}
+#namesOfColumns {
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+.row {
+    display: flex;
+}
+.column {
+    flex: 50%;
+}
