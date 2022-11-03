@@ -13,5 +13,13 @@ def main():
 def header():
     return render_template('header.html')
 
+@app.route('/kinematics')
+def kinematics():
+    return render_template('kinematics.html')
+
+@app.route('/kinematics/basicsOfSi')
+def basicsOfSi():
+    return render_template('kinematics/basicsOfSi.html')
+
 if __name__ == '__main__':
     app.run()
