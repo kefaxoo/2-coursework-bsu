@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    {% endblock %}
+</head>
+<body>
+    <div id="header">
+        {% block header %}
+        <div id="title"><a href="/">
+            Виртуальная лаборатория по механике
+        </a></div>
+        <div id="button"><a href="statics.html">
+            Статика
+        </a></div>
+        <div id="button"><a href="kinematics.html">
+            Кинематика
+        </a></div>
+        <div id="button"><a href="dynamics.html">
+            Динамика
+        </a></div>
+        <hr>
+        {% endblock %}
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
