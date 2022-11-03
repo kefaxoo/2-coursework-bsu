@@ -1,0 +1,73 @@
+{% extends "header.html" %}
+{% block head %}
+<title>Основы СИ</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='kinematics/basicsOfSi.css') }}">
+{% endblock %}
+{% block content %}
+    <h1>Основы СИ</h1>
+    <h2>Основные единицы</h2>
+    <table>
+        <tr>
+            <th colspan="2">Величина</th>
+            <th colspan="2">Единица</th>
+        </tr>
+        <tr>
+            <th>Наименование</th>
+            <th>Символ размерности</th>
+            <th>Наименование</th>
+            <th>Обозначение</th>
+        </tr>
+        <tr>
+            <td>Длина</td>
+            <td>L</td>
+            <td>метр</td>
+            <td>м</td>
+        </tr>
+        <tr>
+            <td>Масса</td>
+            <td>M</td>
+            <td>килограмм</td>
+            <td>кг</td>
+        </tr>
+        <tr>
+            <td>Время</td>
+            <td>T</td>
+            <td>секунда</td>
+            <td>с</td>
+        </tr>
+        <tr>
+            <td>Сила электрического тока</td>
+            <td>I</td>
+            <td>ампер</td>
+            <td>А</td>
+        </tr>
+        <tr>
+            <td>Термодинамическая температура</td>
+            <td>Θ</td>
+            <td>кельвин</td>
+            <td>K</td>
+        </tr>
+        <tr>
+            <td>Количество вещества</td>
+            <td>N</td>
+            <td>моль</td>
+            <td>моль</td>
+        </tr>
+    </table>
+    <h2>Производные единицы, имеющие специальные наименования и обозначения</h2>
+    <table>
+        <tr>
+            <th>Величина</th>
+            <th>Единица</th>
+            <th>Обозначение</th>
+            <th>Вычисление единицы величины</th>
+        </tr>
+        <tr>
+            <td>Плоский угол</td>
+            <td>радиан</td>
+            <td>рад</td>
+            <td>Плоский угол</td>
+        </tr>
+    </table>
+{% endblock %}
