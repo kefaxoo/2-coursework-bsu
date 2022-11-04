@@ -3,9 +3,13 @@
 <title>Основы СИ</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='kinematics/basicsOfSi.css') }}">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endblock %}
 {% block content %}
+    <div id="back"><a href="/kinematics">< Назад</a></div>
     <h1>Основы СИ</h1>
+    <hr>
     <h2>Основные единицы</h2>
     <table>
         <tr>
@@ -44,7 +48,7 @@
         </tr>
         <tr>
             <td>Термодинамическая температура</td>
-            <td>Θ</td>
+            <td>T</td>
             <td>кельвин</td>
             <td>K</td>
         </tr>
@@ -55,19 +59,184 @@
             <td>моль</td>
         </tr>
     </table>
+    <hr>
     <h2>Производные единицы, имеющие специальные наименования и обозначения</h2>
     <table>
         <tr>
             <th>Величина</th>
             <th>Единица</th>
             <th>Обозначение</th>
-            <th>Вычисление единицы величины</th>
+            <th>Представление единицы измерения через основные единицы СИ</th>
         </tr>
         <tr>
             <td>Плоский угол</td>
             <td>радиан</td>
             <td>рад</td>
-            <td>Плоский угол</td>
+            <td>$$\frac{м}{м}=1$$</td>
+        </tr>
+        <tr>
+            <td>Температура Цельсия</td>
+            <td>градус Цельсия</td>
+            <td>$$^\circ C$$</td>
+            <td>$$t_C = t_K - 273.15$$</td>
+        </tr>
+        <tr>
+            <td>Частота</td>
+            <td>герц</td>
+            <td>Гц</td>
+            <td>$$Гц = \frac{1}{с}$$</td>
+        </tr>
+        <tr>
+            <td>Сила</td>
+            <td>ньютон</td>
+            <td>Н</td>
+            <td>$$Н=\frac{кг\cdot м}{с^2}$$</td>
+        </tr>
+        <tr>
+            <td>Напряжение, давление</td>
+            <td>паскаль</td>
+            <td>Па</td>
+            <td>$$Па=\frac{Н}{м^2}=\frac{кг}{c^2\cdot м}$$</td>
+        </tr>
+        <tr>
+            <td>Энергия, работа, количество теплоты</td>
+            <td>джоуль</td>
+            <td>Дж</td>
+            <td>$$Дж=Н\cdot м=\frac{кг\cdot м^2}{с^2}$$</td>
+        </tr>
+        <tr>
+            <td>Мощность</td>
+            <td>ватт</td>
+            <td>Вт</td>
+            <td>$$Вт=\frac{Дж}{с}=\frac{кг\cdot м^2}{c^3}$$</td>
+        </tr>
+        <tr>
+            <td>Электрический заряд</td>
+            <td>кулон</td>
+            <td>Кл</td>
+            <td>$$Кл=А\cdot с$$</td>
+        </tr>
+        <tr>
+            <td>Разность потенциалов</td>
+            <td>вольт</td>
+            <td>В</td>
+            <td>$$В=\frac{Вт}{А}=\frac{кг\cdot м^2}{А\cdot с^3}$$</td>
+        </tr>
+        <tr>
+            <td>Электроёмкость</td>
+            <td>фарад</td>
+            <td>Ф</td>
+            <td>$$Ф=\frac{Кл}{В}=\frac{А^2\cdot с^4}{кг\cdot м^2}$$</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Таблица дольных и кратных приставок в физике</h2>
+    <table>
+        <tr>
+            <th colspan="3">Кратные</th>
+            <th colspan="3">Дольные</th>
+        </tr>
+        <tr>
+            <th>Приставка</th>
+            <th>Обозначение</th>
+            <th>Множитель</th>
+            <th>Приставка</th>
+            <th>Обозначение</th>
+            <th>Множитель</th>
+        </tr>
+        <tr>
+            <td>тера</td>
+            <td>Т</td>
+            <td>$$10^{12}$$</td>
+            <td>пика</td>
+            <td>п</td>
+            <td>$$10^{-12}$$</td>
+        </tr>
+        <tr>
+            <td>мега</td>
+            <td>М</td>
+            <td>$$10^{9}$$</td>
+            <td>нано</td>
+            <td>н</td>
+            <td>$$10^{-9}$$</td>
+        </tr>
+        <tr>
+            <td>мега</td>
+            <td>М</td>
+            <td>$$10^{6}$$</td>
+            <td>микро</td>
+            <td>мк</td>
+            <td>$$10^{-6}$$</td>
+        </tr>
+        <tr>
+            <td>кило</td>
+            <td>к</td>
+            <td>$$10^{3}$$</td>
+            <td>милли</td>
+            <td>м</td>
+            <td>$$10^{-3}$$</td>
+        </tr>
+        <tr>
+            <td>гекто</td>
+            <td>г</td>
+            <td>$$10^{2}$$</td>
+            <td>санти</td>
+            <td>с</td>
+            <td>$$10^{-2}$$</td>
+        </tr>
+        <tr>
+            <td>дека</td>
+            <td>да</td>
+            <td>$$10^{1}$$</td>
+            <td>деци</td>
+            <td>д</td>
+            <td>$$10^{-1}$$</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Внесистемные единицы</h2>
+    <table>
+        <tr>
+            <th>Название величины</th>
+            <th>Название единицы измерения</th>
+            <th>Обозначение</th>
+            <th>Представление единицы измерения через основные единицы СИ</th>
+        </tr>
+        <tr>
+            <td>Время</td>
+            <td>час</td>
+            <td>ч</td>
+            <td>1 ч = 3600 с</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>минута</td>
+            <td>мин</td>
+            <td>1 м = 60 с</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>сутки</td>
+            <td>сут</td>
+            <td>1 сут = 86400 с</td>
+        </tr>
+        <tr>
+            <td>Объём</td>
+            <td>литр</td>
+            <td>л</td>
+            <td>$$1\hspace{5px}л = 10^{-3}м^3$$</td>
+        </tr>
+        <tr>
+            <td>Масса</td>
+            <td>тонна</td>
+            <td>т</td>
+            <td>1 т = 1000 кг</td>
+        </tr>
+        <tr>
+            <td>Давление</td>
+            <td>миллиметр ртутного стоба</td>
+            <td>мм рт. ст.</td>
+            <td>$$1\hspace{5px}мм\hspace{5px}рт.ст.= \frac{101325}{760} Па$$</td>
         </tr>
     </table>
 {% endblock %}

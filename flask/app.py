@@ -21,5 +21,17 @@ def kinematics():
 def basicsOfSi():
     return render_template('kinematics/basicsOfSi.html')
 
+@app.route('/kinematics/pathAndMovement')
+def pathAndMovement():
+    return render_template('kinematics/pathAndMovement.html')
+
+@app.route('/kinematics/averageSpeed')
+def averageSpeed():
+    return render_template('kinematics/averageSpeed.html')
+
+@app.route('/kinematics/equidistantStraightMovement')
+def equidistantStraightMovement():
+    return render_template('kinematics/equidistantStraightMovement.html')
+
 if __name__ == '__main__':
     app.run()

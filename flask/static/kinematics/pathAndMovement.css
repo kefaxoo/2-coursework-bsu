@@ -1,5 +1,7 @@
 body {
     font-family: "SF Pro Rounded";
+}
+h1 {
     text-align: center;
 }
 #back>a {
@@ -7,14 +9,8 @@ body {
     float: left;
     padding-left: 10px;
 }
-table {
-    width: 100%;
-    text-align: center;
-}
-th, td {
-    padding: 5px;
-}
-th {
-    font-weight: bold;
-    font-size: large;
+p {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
 }

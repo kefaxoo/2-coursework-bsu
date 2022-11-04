@@ -2,14 +2,17 @@ body {
     font-family: "SF Pro Rounded";
     text-align: center;
 }
-#namesOfColumns {
-    font-weight: bold;
-    font-size: large;
+table {
+    width: 100%;
     text-align: center;
 }
-.row {
-    display: flex;
+th, td {
+    padding: 5px;
 }
-.column {
-    flex: 50%;
+th {
+    font-weight: bold;
+    font-size: large;
+}
+a {
+    text-decoration: none;
 }
