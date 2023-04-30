@@ -1,0 +1,15 @@
+div{
+    font-family: "SF Pro Rounded";
+    display: inline-block;
+}
+#header>#title>a, #header>#button>a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+#header>#title>a{
+    font-size: 25px;
+}
+#spacer{
+    font-size: 25px;
+}

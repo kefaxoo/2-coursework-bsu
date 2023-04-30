@@ -1,28 +1,20 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    {% block head %}
     <meta charset="UTF-8">
+    {% block head %}
+        <title>Header</title>
     {% endblock %}
 </head>
 <body>
-    <div id="header">
-        {% block header %}
-        <div id="title"><a href="/">
-            Виртуальная лаборатория по механике
-        </a></div>
-        <div id="button"><a href="/static">
-            Статика
-        </a></div>
-        <div id="button"><a href="/kinematics">
-            Кинематика
-        </a></div>
-        <div id="button"><a href="/dynamics">
-            Динамика
-        </a></div>
-        <hr>
-        {% endblock %}
-    </div>
-    {% block content %}
+    {% block header %}
+        <div id="header">
+            <div id="title"><a href="/">Виртуальная лаборатория по механике</a></div>
+            <div id="button"><a href="/kinematics">Кинематика</a></div>
+            <hr>
+        </div>
+    {% endblock %}
+    {% block body %}
     {% endblock %}
 </body>
 </html>
