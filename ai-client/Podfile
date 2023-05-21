@@ -12,5 +12,6 @@ target 'ai-client' do
   pod 'MessageKit'
   pod 'SnapKit'
   pod 'SPIndicator'
+  pod 'NVActivityIndicatorView'
 
 end

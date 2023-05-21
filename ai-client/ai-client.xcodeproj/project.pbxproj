@@ -20,6 +20,7 @@
 		704EFC0E29FE68B2000BFB66 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704EFC0D29FE68B2000BFB66 /* UITableView.swift */; };
 		704EFC1029FE68BF000BFB66 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704EFC0F29FE68BF000BFB66 /* UITableViewCell.swift */; };
 		704EFC1329FE6BD2000BFB66 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704EFC1229FE6BD2000BFB66 /* SettingsManager.swift */; };
+		70C486F82A16C869009F60FE /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C486F72A16C869009F60FE /* CGRect.swift */; };
 		70E424C629FE8DDC001E8496 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E424C529FE8DDC001E8496 /* ChatViewController.swift */; };
 		70E424C829FE911D001E8496 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E424C729FE911D001E8496 /* MainViewController.swift */; };
 		70E424CA29FE91CA001E8496 /* VCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E424C929FE91CA001E8496 /* VCTableViewCell.swift */; };
@@ -50,6 +51,7 @@
 		704EFC0D29FE68B2000BFB66 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		704EFC0F29FE68BF000BFB66 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		704EFC1229FE6BD2000BFB66 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		70C486F72A16C869009F60FE /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		70E424C529FE8DDC001E8496 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		70E424C729FE911D001E8496 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		70E424C929FE91CA001E8496 /* VCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTableViewCell.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				704EFC0429FE6592000BFB66 /* UIViewController.swift */,
 				704EFC0D29FE68B2000BFB66 /* UITableView.swift */,
 				704EFC0F29FE68BF000BFB66 /* UITableViewCell.swift */,
+				70C486F72A16C869009F60FE /* CGRect.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				70E424D629FE9D1F001E8496 /* MessageModel.swift in Sources */,
 				704EFC1029FE68BF000BFB66 /* UITableViewCell.swift in Sources */,
 				70E424DB29FEF121001E8496 /* RealmMessageModel.swift in Sources */,
+				70C486F82A16C869009F60FE /* CGRect.swift in Sources */,
 				704EFBED29FE6439000BFB66 /* AppDelegate.swift in Sources */,
 				70E424D829FEED3D001E8496 /* RealmManager.swift in Sources */,
 				704EFBEF29FE6439000BFB66 /* SceneDelegate.swift in Sources */,
